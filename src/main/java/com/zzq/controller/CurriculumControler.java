@@ -33,6 +33,8 @@ public class CurriculumControler {
     public String addStudent(Curriculum curriculum,@RequestParam(defaultValue = "0") Integer status){
 
         if(status==1) {
+
+            
             return curriculumService.editCur(curriculum) + "";
         }
         {
